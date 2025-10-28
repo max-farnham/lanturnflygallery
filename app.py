@@ -69,7 +69,7 @@ def gallery():
         return jsonify(ok=False, error=str(e)), 500
 
 
-@app.route("/health")
+@app.route("/api/v1/health")
 def health():
     return jsonify(ok=True)
 
